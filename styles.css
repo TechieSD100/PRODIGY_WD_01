@@ -60,6 +60,11 @@ section{
     font-size: 5em;
 }
 
+.banner .content p{
+    color: #fff;
+    font-size: 1.2em;
+}
+
 .fitBg{
     position: absolute;
     top: 0;
