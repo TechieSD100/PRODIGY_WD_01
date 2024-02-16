@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -131,7 +132,8 @@ section{
     min-height: 500px;
 }
 
-.banner2{
+.banner2,
+.banner3{
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -140,7 +142,8 @@ section{
     align-items: center;
 }
 
-.banner2:before{
+.banner2:before,
+.banner3:before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -151,7 +154,8 @@ section{
     background: linear-gradient(to top, #111, transparent);
 }
 
-.banner2:after{
+.banner2:after,
+.banner3:after{
     content: '';
     position: absolute;
    top: 0;
@@ -220,4 +224,86 @@ section{
     font-size: 0.8em;
     font-weight: 300;
     opacity: 0.5;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .sci{
+    position: relative;
+    display: flex;
+}
+
+.footer .sci li{
+    list-style-type: none;
+}
+
+.footer .sci li a{
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.footer .sci li a img{
+    filter: invert(1);
+    max-width: 40px;
+}
+
+.copyrightText{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+    text-align: center;
+}
+
+.copyrightText a{
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 767px){
+    section{
+        padding: 40px;
+    }
+    .banner .content h2{
+        font-size: 2.5em;
+    }
+    .banner .content p{
+        font-size: 1em;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .contentBx,
+    .about .imgBx{
+        min-width: 100%;
+        width: 100%;
+        text-align: center;
+        padding-right: 0px;
+    }
+    .about .imgBx{
+        min-height: 250px;
+    }
+    .btn{
+        margin-bottom: 30px;
+    }
+    .destination .destinationList .box{
+        position: relative;
+        max-width: 350px;
+        min-width: initial;
+        width: 350px;
+        height: 400px;
+    }
+    .destination .destinationList .box .imgBx{
+        height: 320px;
+    }
+    .footer .sci li a img{
+        filter: invert(1);
+        max-width: 30px;
+    }
 }
